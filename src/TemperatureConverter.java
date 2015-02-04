@@ -1,5 +1,3 @@
-import com.sun.javafx.css.CssError;
-
 /**
  * Created by patrick on 2/2/15.
  */
@@ -34,11 +32,11 @@ public class TemperatureConverter {
     else if (firstArg.equals("-C")) {
       celsius = secondArg;
       fahrenheit = (celsius * 9/5) + 32;
-      System.out.println(celsius + " degrees Celsius is equal to " + fahrenheit + " degrees Fahrenheit.");
+      System.out.println(celsius + " degrees Celsius is equal to " +  fahrenheit + " degrees Fahrenheit.");
     }
     else {
       System.out.println("Illegal first argument");
-      return;
+      System.exit(1);
     }
   }
 }
